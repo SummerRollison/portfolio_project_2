@@ -1,0 +1,166 @@
+/* Home page content */
+.intro {
+    text-align: center;
+    height: 350px;
+    padding-top: 100px;
+    background-image: url(images/home_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro h1,
+.intro h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0 10%;
+}
+
+.home-about-1 {
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 -4px 30px -2px #949494;
+
+}
+
+.home-about-2 {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-about-2 p {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.recomendations h2 {
+    font-size: 1.5em;
+}
+
+.quotes {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+.quotes h5 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.quotes p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recomendations hr {
+    width: 90%;
+    size: .5px;
+    color: #dcdcdc;
+    opacity: .5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Contact page content */
+.contact {
+    text-align: center;
+}
+
+.contact img {
+    width: 15%;
+    max-width: 50px;
+    padding: 0 3px;
+}
+
+/* About page content */
+#headshot {
+    width: 80%;
+    display: block;
+    max-width: 300px;
+}
+
+#about-contact {
+    overflow: auto;
+    background-color: #f9f9f9
+}
+
+#port {
+    margin-bottom: 40px;
+}
+
+.about {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Mobile Landcape */
+@media screen and (min-width: 375px) {
+    .recomendations h2 {
+        font-size: 2em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 706px) {
+
+    /* Home page content */
+    .recomendations h2 {
+        font-size: 2.5em;
+    }
+
+    .quotes {
+        display: inline-block;
+        width: 50%;
+        padding: 30px;
+        float: left;
+    }
+
+    .quotes hr {
+        display: none;
+    }
+
+    .quotes:nth-of-type(even) {
+        border-left: 1px solid #dcdcdc;
+        padding-left: 40px;
+    }
+
+    .row:nth-of-type(odd) {
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .intro {
+        height: 400px;
+        padding-top: 150px;
+    }
+
+    /* About page content */
+    #headshot {
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        width: 50%;
+    }
+
+    .about {
+        margin-top: 70px;
+    }
+
+    #about-contact {
+        margin: 20px 50px 20px 20px;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .intro {
+        height: 600px;
+        padding-top: 250px;
+    }
+}
